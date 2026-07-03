@@ -52,4 +52,4 @@ MANNERS + DISPATCHER_CORE > identity module hard lines > DECISIONS.md (tuple
 layer) > playbooks > task judgment. A lower layer contradicting a higher layer
 is a spec defect: halt, flag, human.
 
-Status: v0.1 DRAFT — cadence N is deployment config; not runtime-tested.
+Status: v0.2 DRAFT — re-injection triggers are CONSTANTS per §Re-injection (the prior status line contradicted that section and was the bug); backstop N=10 PROVISIONAL pending after-action data. Trigger instrumentation runtime-tested (dispatcher-agents suite); conduct itself not runtime-tested.
