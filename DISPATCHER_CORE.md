@@ -129,7 +129,11 @@ Runtime-tested (dispatcher-agents build, tests green against the real
 35-route track): envelope/ack/persist ordering, tuple enforcement,
 idempotency, sequence assignment, authority signatures, restricted-speed
 holds, KPI computation from audit log, JIT priority + siding contention
-rule, identity side-load loading. NOT yet implemented or tested: loop
-protection threshold->suspend, escalation human-notification transport,
-heartbeat watchdog, territories (forward spec). Owner ratification of
-tuples and priority classes still pending.
+rule, identity side-load loading, loop protection threshold->suspend,
+escalation human-notification transport, heartbeat watchdog (observer-side;
+no uptime percentage without external wall-clock baseline), playbook
+completion events, and signed territory transfer (fail-closed verification,
+persist-before-adopt, release-on-ack-only). Territories §100-110 is
+implemented as specified and no longer forward-spec. Priority classes
+ratified by owner 07/2026 (adjustable as projects move). Remaining untested:
+conduct-level efficacy of MANNERS; multi-region deployment at scale.
