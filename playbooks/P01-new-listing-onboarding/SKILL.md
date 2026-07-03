@@ -3,11 +3,11 @@ name: P01-new-listing-onboarding
 description: "Swarm deployment playbook: signed listing agreement to live, marketed listing. Deploys agents 04, 05, 06, 09, 11, 12, 13, 14, 17, 18 in three gated phases. Use when a new listing agreement is executed and the human authorizes go-to-market."
 ---
 
-# Playbook P01 — New Listing Onboarding
+# Playbook P01 - New Listing Onboarding
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
-**Type:** Deployment playbook (consumed by Agent 00 — Dispatcher)
-**Version:** 0.1 (DRAFT — not implemented)
+**Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
+**Version:** 0.1 (DRAFT - not implemented)
 
 ## Trigger
 Signed listing agreement executed and human submits the authorized listing
@@ -23,7 +23,7 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 
 ## Deployment sequence
 
-### Phase 1 — Setup (parallel)
+### Phase 1 - Setup (parallel)
 | Step | Agent | Action | Intent | Proof of done |
 |---|---|---|---|---|
 | 1a | 14 | Establish/confirm client context, log agreement | `interaction.log` | ack + record ID |
@@ -31,24 +31,24 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 | 1c | 18 | Calendar blocks: shoot, prep, go-live target | `calendar.event` | ack |
 | 1d | 11 | Seller onboarding message + comms cadence (consent-checked) | `client.message.request` → `client.message.send` | send log |
 
-### Phase 2 — Production (gated on 1b deliverables)
+### Phase 2 - Production (gated on 1b deliverables)
 GATE: photos delivered, verified present-and-opens by 09.
 | Step | Agent | Action | Intent | Proof of done |
 |---|---|---|---|---|
 | 2a | 09→05 | Photo deliverables to MLS agent | `deliverable.release` | 05 receipt ack |
 | 2b | 05→04 | Property data package to description agent | `listing.data` | ack |
-| 2c | 04 | Draft MLS description, captions, flyer, tour script | — | drafts complete |
+| 2c | 04 | Draft MLS description, captions, flyer, tour script | - | drafts complete |
 | 2d | 04→17 | All assets to compliance | `content.review` | verdict returned |
 | 2e | 17→04 | Verdict | `content.verdict` | `approved`, or flag→HITL |
 | 2f | 04→05, 04→12 | Release approved assets | `asset.release` | acks |
 
-### Phase 3 — Go-live (gated on 2f + MLS entry)
+### Phase 3 - Go-live (gated on 2f + MLS entry)
 GATE: 05 completes MLS entry and verifies the LIVE listing (live-check, not
 push log), then emits `status.update` (active) to 11, 12, 14.
 | Step | Agent | Action | Intent | Proof of done |
 |---|---|---|---|---|
-| 3a | 05 | Syndication to portals, live-verified | — | live listing checks |
-| 3b | 12 | Launch campaign — CLEAR COOPERATION GATE satisfied by 3a's `status.update`; housing special-ad-category rules | `campaign.publish` | publish confirmations |
+| 3a | 05 | Syndication to portals, live-verified | - | live listing checks |
+| 3b | 12 | Launch campaign - CLEAR COOPERATION GATE satisfied by 3a's `status.update`; housing special-ad-category rules | `campaign.publish` | publish confirmations |
 | 3c | 05→13 | Listing into buyer-match feeds | `listing.data` | ack |
 | 3d | 06 | Open house scheduling if configured | `calendar.event` | confirmations |
 | 3e | 11 | "Your listing is live" + links to seller | `client.message.request` | send log |
@@ -76,4 +76,4 @@ playbook not complete = reported as not complete.
 ## Notes for the Dispatcher
 Steps within a phase run parallel unless a Proof-of-done of one is another's
 input. Phase gates are checked against artifacts, not assurances. This playbook
-never routes around a spoke's own legal line — it sequences them.
+never routes around a spoke's own legal line - it sequences them.

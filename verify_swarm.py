@@ -1,25 +1,25 @@
 #!/usr/bin/env python3
-"""verify_swarm.py — the back-of-house scaffold, formal entrypoint.
+"""verify_swarm.py - the back-of-house scaffold, formal entrypoint.
 
 Specs do not enforce themselves because an agent read them in a .md file.
 This script is the enforcement: it fails the build when the spec and the
 files disagree. Run from the package root (or CI). Exit 0 = clean.
 
 Checks:
-  1. TUPLE LEGALITY  — every declared agent edge (direction, intent, endpoints)
+  1. TUPLE LEGALITY - every declared agent edge (direction, intent, endpoints)
      matches a ROUTES entry. Intent-existence alone is NOT enough; the
      (from -> intent -> to) tuple must be legal. (The Agent 15 defect class.)
-  2. EDGE COMPLETENESS — reverse direction: every sender/receiver ROUTES names
+  2. EDGE COMPLETENESS - reverse direction: every sender/receiver ROUTES names
      must DECLARE a matching edge. (The Agent 07 vendor.request defect class.)
-  3. REGRESSION — frontmatter (36 files), playbook intent legality vs ROUTES,
+  3. REGRESSION - frontmatter (36 files), playbook intent legality vs ROUTES,
      envelope JSON parse, required sections.
 
 Exemptions (documented, deliberate):
-  - interaction.log: ambient logging duty; legality checked, per-agent
+ - interaction.log: ambient logging duty; legality checked, per-agent
     declaration not required.
-  - escalation.* / clarification.request / integrity.violation: any-sender
+ - escalation.* / clarification.request / integrity.violation: any-sender
     ambient duties.
-  - Untyped edge cells are warnings unless whitelisted (11's content-routed
+ - Untyped edge cells are warnings unless whitelisted (11's content-routed
     reply forwarding is the sole whitelist entry).
 """
 import glob, json, re, sys

@@ -1,7 +1,7 @@
-# Agent 08 — Predeliberated Decisions (Tuple Layer) v0.1 DRAFT
+# Agent 08 - Predeliberated Decisions (Tuple Layer) v0.1 DRAFT
 
 Meta pre-decision layer, above playbooks: crossings this agent may reach,
-already deliberated. Format: (crossing, answer) — a location with its answer,
+already deliberated. Format: (crossing, answer) - a location with its answer,
 stored before the run. Swarm-wide tuples in /SWARM.md apply first; MANNERS.md
 constrains everything. An unlisted crossing = ambiguity protocol + propose the
 missing tuple via after-action.
