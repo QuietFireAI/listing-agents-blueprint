@@ -46,3 +46,7 @@ IDENTITY_DIR=../listing-agents python3 demo/run_p11_demo.py
 
 First of several verticals. Status: v0.17; owner density review of P02-P15
 pending. MIT - [QuietFireAI](https://github.com/QuietFireAI).
+
+## License
+
+Proprietary - commercial licenses available from QuietFireAI. See LICENSE.
