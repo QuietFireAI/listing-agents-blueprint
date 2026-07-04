@@ -11,3 +11,7 @@ missing tuple via after-action.
 - (past client signals new business, lead.captured to 02; never negotiate)
 - (greeting requested for someone not on the supplied list, refuse; the list is the authority)
 - (referral gift or incentive idea, escalation.legal_line; license law + RESPA territory)
+- (anniversary touch would land during a known distress event (death, divorce on file), suppress; human decides)
+- (past client asks a new-transaction question, new context opened, routed as new lead; old context stays closed)
+- (referral reward mention requested, 17 gate first; inducement rules vary by state)
+- (contact bounced/disconnected, mark stale, no skip-tracing; re-permission is a human choice)

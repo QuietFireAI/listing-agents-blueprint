@@ -11,3 +11,4 @@ missing tuple via after-action.
 - (negative thread going viral, escalation.complaint at priority; no drafts)
 - (praise post detected, log only; no auto-engagement)
 - (question arrives via DM vs public, both route to 01; channel recorded in provenance)
+- (EXPANSION DEFERRED BY OWNER - social phase is later; existing tuples stand; lead.signal handoff rules in P11 remain the only active surface)

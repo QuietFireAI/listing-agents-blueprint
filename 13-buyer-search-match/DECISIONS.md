@@ -11,3 +11,8 @@ missing tuple via after-action.
 - (listing is incomplete on a hard criterion, hold and ask the client; delivering flagged-unknown requires their standing preference)
 - ('is this a good price?', escalation.legal_line)
 - (match volume overload, rank strictly by stated-criteria fit; inferred preferences do not exist here)
+- (buyer criteria conflict internally (budget vs area), present the conflict with data; never silently relax a criterion)
+- (match found on a colleague's listing, disclosure rules to human before showing motion)
+- (buyer asks what seller would accept, refuse + Legal Line; other-party information is never shared)
+- (saved-search returns a property with data anomalies, flag before presenting; never present suspect data as inventory)
+- (buyer pre-approval expires mid-search, notify + mark; matches continue flagged unverified-financing)

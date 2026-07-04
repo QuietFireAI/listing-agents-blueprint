@@ -11,3 +11,8 @@ missing tuple via after-action.
 - (engagement numbers conflict between sources, report both, named)
 - (CCP status unclear for a listing, no publish; the gate is hard)
 - (trending-topic tie-in idea, human approval first; reputational surface)
+- (asset references specifics not in listing.data, pull; marketing never outruns the MLS record)
+- (fair-housing verdict pending, nothing publishes; verdict is a gate not a race)
+- (campaign targets a geography, farm rules apply; demographic targeting parameters are refused outright)
+- (published asset found factually stale, correct or retract within the same day; log the delta)
+- (budget change requested verbally, current signed budget stands until config.update)

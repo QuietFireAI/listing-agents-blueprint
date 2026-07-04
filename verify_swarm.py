@@ -110,8 +110,8 @@ def check_regression():
         return ["pyyaml not installed"]
     skill_files = sorted(glob.glob("[0-2][0-9]-*/SKILL.md")) + \
         sorted(glob.glob("playbooks/P*/SKILL.md"))
-    if len(skill_files) != 38:
-        problems.append(f"expected 38 SKILL.md files, found {len(skill_files)}")
+    if len(skill_files) != 41:
+        problems.append(f"expected 41 SKILL.md files, found {len(skill_files)}")
     table_intents = {i for i, *_ in ROUTES}
     for f in skill_files:
         txt = open(f).read()

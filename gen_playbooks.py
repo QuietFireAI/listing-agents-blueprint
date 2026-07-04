@@ -286,3 +286,61 @@ for p in DAILY:
     os.makedirs(path, exist_ok=True)
     open(os.path.join(path, "SKILL.md"), "w").write(build(p))
     print("emitted", p["num"])
+
+DAILY2 = [
+ {"num":"P18","slug":"seller-weekly-report","name":"Seller Weekly Report",
+  "desc":"Swarm deployment: the standing seller update. Showings, feedback, market movement, next steps - assembled, compliance-gated, human-approved, sent on cadence. Agents 05, 06, 10, 11, 14, 17.",
+  "trigger":"Weekly per active listing (owner-configured day) or owner command.",
+  "pre":["Listing active in MLS (05 status current).","Seller update template exists in identity config; free-composition to clients is not a fallback."],
+  "phases":[("Assemble",[
+    ("1","06","Week's showings + feedback received","`interaction.log` refs","items on log"),
+    ("2","10","Market movement for the property's segment, provenance on every datum","`data.package`","package on log"),
+    ("3","05","Status and activity summary for the listing","`status.update`","update on log")]),
+   ("Gate and send",[
+    ("4","17","Fair-housing/advertising screen on assembled draft","`content.review`","`content.verdict` clean"),
+    ("5","11","Human review of draft; on approval, send via template","`client.message.send`","send log + human approval on file")])],
+  "gates":["No send without human approval - the weekly report is client-facing.",
+           "No market claim without provenance; thin data weeks say so rather than pad.",
+           "Pricing commentary or strategy suggestions are Legal Line - the report STATES data, the human interprets it."],
+  "completion":"Send logged with approval reference; next cadence scheduled via 18.",
+  "abort":["Verdict requires changes past send-day: report ships next day corrected, delay logged; never ship unverdicted.",
+           "Seller has requested pause: cadence suspended, resumption is owner action."],
+  "notes":"Consistency is the product here: the seller who hears every week, in the same shape, with sourced data, stays a client. This playbook is the standardization claim made real."},
+ {"num":"P19","slug":"property-access-custody","name":"Property Access Custody",
+  "desc":"Swarm deployment: keys, codes, and lockboxes as custody items. Issue, audit, rotate, revoke - with access secrets never transmitted in messages. Agents 06, 09, 14, 18.",
+  "trigger":"New listing access setup (from P01), custody audit cadence, or a custody event (lost key, code exposure, vendor access need).",
+  "pre":["Custody register exists for the property (created at P01 step or first event)."],
+  "phases":[("Custody operations",[
+    ("1","06","Access grants recorded per showing/vendor need; instructions route parties to the custody protocol - the SECRET ITSELF never rides a message","`interaction.log`","grant recorded, no secret in any payload"),
+    ("2","09","Vendor access windows scheduled; entry/exit confirmations required","`vendor.request` / `calendar.event`","confirmations on log"),
+    ("3","14","Custody register current: who holds what, since when","`record.request`/`record.response`","register reconciles")]),
+   ("Audit",[
+    ("4","18","Cadence audit: outstanding grants past window flagged","`deadline.alert`","alerts on log"),
+    ("5","00","Exposure event = escalation; rotation task to human same day","`escalation.*`","human acknowledgment")])],
+  "gates":["An access code, combo, or key location NEVER appears in a message payload, log free-text, or report - references only (custody register id).",
+           "A grant without an expiry is refused - open-ended access does not exist.",
+           "Exposure suspicion = rotate first, investigate second; the cost asymmetry decides."],
+  "completion":"Register reconciled: every outstanding grant inside its window, every expiry scheduled.",
+  "abort":["Register cannot reconcile (unknown holder): escalation, showings on that property hold until human clears access state."],
+  "notes":"One unaccounted key is a liability event, not an inconvenience. This playbook exists because access custody is where informal practice hurts agents worst."},
+ {"num":"P20","slug":"vacant-property-watch","name":"Vacant Property Watch",
+  "desc":"Swarm deployment: standing watch on vacant listings. Condition checks scheduled, utility status tracked, activity anomalies surfaced. Agents 05, 09, 10, 14, 18.",
+  "trigger":"Listing marked vacant (from P01 data or status change) until occupied/closed.",
+  "pre":["Vacancy recorded on the listing record; owner-configured check cadence exists."],
+  "phases":[("Standing watch",[
+    ("1","18","Condition-check cadence scheduled (owner/vendor walkthroughs)","`calendar.event`","events scheduled"),
+    ("2","09","Walkthrough vendor scheduling + completion proof per visit","`vendor.request`","`deliverable.release` with proof"),
+    ("3","14","Utility/service status tracked on the record; lapses flagged","`record.request`","record current"),
+    ("4","10","Showing-activity anomaly check: zero-activity streak or unusual access pattern to morning brief","`data.package`","anomalies in P16 brief")]),
+   ("Event response",[
+    ("5","00","Condition event (damage, break-in sign, utility failure) = same-day escalation to human with the raw report","`escalation.*`","human acknowledgment")])],
+  "gates":["Condition reports carry the vendor's raw artifact - never a paraphrase.",
+           "No repair authorization originates here; scope and spend are human decisions (P09 vendor rules apply)."],
+  "completion":"Continuous until vacancy ends; each cadence cycle completes with proof artifacts on log.",
+  "abort":["Two consecutive missed walkthroughs: escalation - an unwatched vacant is the risk this playbook exists to prevent."],
+  "notes":"Vacant listings fail quietly. The watch converts quiet failure into logged events with proof."}]
+for p in DAILY2:
+    path = os.path.join(ROOT, f"{p['num']}-{p['slug']}")
+    os.makedirs(path, exist_ok=True)
+    open(os.path.join(path, "SKILL.md"), "w").write(build(p))
+    print("emitted", p["num"])

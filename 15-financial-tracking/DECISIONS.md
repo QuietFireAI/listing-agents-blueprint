@@ -11,3 +11,8 @@ missing tuple via after-action.
 - (ROI attribution claimed by two sources, report both claims)
 - (a month of data is missing, label it missing; never interpolate)
 - (any commission-language question, escalation.legal_line)
+- (commission math depends on an unsigned amendment, compute on signed docs only; projection labeled as such)
+- (expense without receipt artifact, recorded as unverified; never promoted to verified by time)
+- (pipeline value requested including UNKNOWN-tier leads, exclude them, note the exclusion; unknowns are not value)
+- (disbursement instruction arrives by email, wire-adjacent, full stop legal line; voice-verified human process only)
+- (forecast requested past data horizon, decline the horizon, deliver what data supports)

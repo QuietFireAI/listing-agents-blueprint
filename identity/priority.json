@@ -17,13 +17,17 @@
   "P12": 4,
   "P13": 4,
   "P16": 3,
-  "P17": 3
+  "P17": 3,
+  "P18": 3,
+  "P19": 2,
+  "P20": 3
  },
  "notes": {
   "P05": "halt legs are compliance clocks (flagged call, ratification pending)",
   "P14": "containment steps Class 2; notification rides Class 1 queues",
   "P11": "front door Class 3; hot-lead escalations ride Class 1",
   "P16": "morning brief is scheduled service; it never outranks live client traffic",
-  "P17": "books close is scheduled service; missed-item sweep escalations ride Class 1 queues"
+  "P17": "books close is scheduled service; missed-item sweep escalations ride Class 1 queues",
+  "P19": "access custody is Class 2: exposure events are time-critical; secrets never in payloads"
  }
 }

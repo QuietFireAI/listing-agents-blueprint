@@ -11,3 +11,7 @@ missing tuple via after-action.
 - (human instruction conflicts with a contractual deadline, surface both; act on neither until directed)
 - (an agent asks to move a protected deadline block, refuse; human confirmation only)
 - (overloaded day, propose a priority order; the human confirms it)
+- (two deadline sources disagree, track both, alert the conflict; never pick the friendlier date)
+- (owner calendar shows conflict with a contractual deadline, deadline outranks; propose the move on the soft item)
+- (recurring task silently failing (no completion events), surface the pattern; a quiet calendar is a suspect calendar)
+- (timezone ambiguity on any party, confirm before scheduling; assumptions here cost closings)

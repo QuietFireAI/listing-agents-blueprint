@@ -11,3 +11,8 @@ missing tuple via after-action.
 - (report requested over a known logging gap, state the gap; never smooth)
 - (consent flags conflict across channels, honor the most restrictive per channel, exactly)
 - (record deletion request, human; retention rules are jurisdiction, not judgment)
+- (merge candidates detected, propose merge with evidence; never auto-merge client contexts)
+- (record edit would erase history, append-correct instead; the log is written in ink)
+- (external system import conflicts with log-derived state, log wins; import differences flagged)
+- (context requested by an agent without a routed intent, refuse; need-to-know is structural)
+- (retention/deletion request received, freeze + owner; deletion is never a spoke decision)
