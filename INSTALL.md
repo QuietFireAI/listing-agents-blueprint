@@ -28,3 +28,16 @@ Caveats:
 - Platform-specific skill features are deliberately unused; files stick to the
   core spec for maximum portability.
 - Status: v0.1 DRAFT specs, not runtime-tested, no licensed legal review.
+
+## Pillar relationship (dispatcher runtime)
+
+This identity contains NO pillar code and NO runtime code, by design. The
+six pillars (before-turn, open-mind, agent-open-mind, pre-response-
+selfcheck, sleep-marks, splitvantage) install with the DISPATCHER, not with
+the identity: the dispatcher imports each pillar package and binds it to a
+runtime seam, then side-loads this identity onto the closed track. Every
+pillar gate that fires on the baseline null identity fires identically on
+this identity's traffic - proven by the P11 demo's six-pillar assertion.
+Install order: dispatcher-agents + six pillar repos first (see its
+PILLAR_TESTING_MANUAL.md), capture the baseline KPIs, then load this
+identity and compare.
