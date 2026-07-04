@@ -28,7 +28,7 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 ### Phase 2 - Transaction kickoff
 | Step | Agent | Action | Intent | Proof of done |
 |---|---|---|---|---|
-| 2a | 07 | Load deadline set per contract template config; open timeline | - | timeline record + `interaction.log` |
+| 2a | 07 | Load deadline set per contract template config; open timeline |  -  | timeline record + `interaction.log` |
 | 2b | 07→08 | Initial document requirements (earnest receipt, disclosures per contract) | `doc.request` | `doc.status` responses (`in_reply_to`) |
 | 2c | 07 | First deadline alerts scheduled | `deadline.alert` | acks from 11, 18 |
 | 2d | 11 | Client transition message: what happens next, cadence | `client.message.send` | send log |

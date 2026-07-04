@@ -23,7 +23,7 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 |---|---|---|---|---|
 | 1 | 20→01 | Social questions/lead signals routed to intake | `lead.signal` | ack |
 | 2 | 01 | Capture with consent recording; CRM dedupe first | `record.request` then `lead.captured` | lead object complete-or-unknown-flagged |
-| 3 | 02 | Score per human rubric version; tier assigned | - | tier + rubric version logged |
+| 3 | 02 | Score per human rubric version; tier assigned |  -  | tier + rubric version logged |
 | 4a | 02 | HOT → human handoff with SLA re-alert | `escalation.hot_lead` | human acknowledgment inside window |
 | 4b | 02 | WARM → nurture entry, consent-gated | `lead.nurture` | 03 sequence started |
 | 5 | 14 | Everything logged; consent flags authoritative | `interaction.log` | records current |

@@ -15,11 +15,15 @@
   "P11": 3,
   "P15": 3,
   "P12": 4,
-  "P13": 4
+  "P13": 4,
+  "P16": 3,
+  "P17": 3
  },
  "notes": {
   "P05": "halt legs are compliance clocks (flagged call, ratification pending)",
   "P14": "containment steps Class 2; notification rides Class 1 queues",
-  "P11": "front door Class 3; hot-lead escalations ride Class 1"
+  "P11": "front door Class 3; hot-lead escalations ride Class 1",
+  "P16": "morning brief is scheduled service; it never outranks live client traffic",
+  "P17": "books close is scheduled service; missed-item sweep escalations ride Class 1 queues"
  }
 }

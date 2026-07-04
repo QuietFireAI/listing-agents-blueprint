@@ -6,6 +6,22 @@ real-estate listing swarm, loadable into the content-neutral
 The runtime never contains vertical text; this repo never contains transport
 code. That split is the architecture.
 
+
+## What this is for
+
+A digital partner for a working realtor: part chatbot, part executor.
+Morning brief assembled before the first coffee (calendar, overnight leads,
+owner-configured market scrapes presented for review, prospect suggestions
+reasoned from yesterday's books, the numbers). End-of-day books that close
+the day and feed tomorrow's suggestions - including the missed-item sweep
+that catches what a human assistant misses: the unanswered message, the
+stale HOT lead, the doc past SLA, the listing with zero activity. One saved
+listing or one caught deadline covers months of cost. Standardized client
+engagement, lower labor cost, fewer inconsistencies - with hard review
+gates: nothing client-facing moves without the human, and fiduciary
+territory escalates immediately (the Legal Line). The full cycle:
+DAILY_OPERATIONS.md; playbooks P16 (morning) and P17 (books).
+
 ## What's here
 
 - **21 agent dirs (`00`-`20`)** - SKILL.md (open Agent Skills standard) +

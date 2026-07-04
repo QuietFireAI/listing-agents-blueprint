@@ -28,9 +28,9 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 ### Phase 2 - Activation
 | Step | Agent | Action | Intent | Proof of done |
 |---|---|---|---|---|
-| 2a | 13 | Enter listing feed matching (05 `listing.data` standing feed) | - | match engine active, logged |
+| 2a | 13 | Enter listing feed matching (05 `listing.data` standing feed) |  -  | match engine active, logged |
 | 2b | 13 | Welcome + first matches delivery | `client.message.request` → 11 | send log |
-| 2c | 14 | Cadence and consent enforcement live | - | record state |
+| 2c | 14 | Cadence and consent enforcement live |  -  | record state |
 
 ## HITL gates (hard stops)
 - No signed agreement = no showing requests ever leave 13 - the flag it sets is what 06 checks.

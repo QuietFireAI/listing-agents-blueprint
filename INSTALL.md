@@ -41,3 +41,11 @@ this identity's traffic - proven by the P11 demo's six-pillar assertion.
 Install order: dispatcher-agents + six pillar repos first (see its
 PILLAR_TESTING_MANUAL.md), capture the baseline KPIs, then load this
 identity and compare.
+
+## Deployment target (direction)
+
+Sold configuration aims at a self-hosted appliance: Snowball-class box or a
+repurposed NAS on the brokerage's network, running dispatcher-agents + the
+six pillars + this identity, data on-premises. STATUS: direction, not
+built. What exists today: the Python runtime + this identity + the testing
+manuals. Tool bindings (MLS, CRM, email/SMS) are per-deployment work.

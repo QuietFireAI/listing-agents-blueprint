@@ -24,9 +24,9 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 |---|---|---|---|---|
 | 1 | human→10 | Comp package: recent sales, actives, expireds per parameters | `data.request` | `data.package` (`in_reply_to`), provenance per datum |
 | 2 | human→10 | Neighborhood/market package for the presentation | `data.request` | `data.package`, sourced figures only |
-| 3 | 10 | Thin-comps honesty: if parameters return too few comps, report thinness - never silently widen | - | package notes field |
+| 3 | 10 | Thin-comps honesty: if parameters return too few comps, report thinness - never silently widen |  -  | package notes field |
 | 4 | 18 | Prep time blocked; materials-ready reminder | `report.package` (briefing) | calendar state |
-| 5 | human | CMA judgment, price opinion, presentation - entirely human | - | - |
+| 5 | human | CMA judgment, price opinion, presentation - entirely human |  -  |  -  |
 
 ## HITL gates (hard stops)
 - The packages contain no opinion field by schema - a request for "the number you'd go with" is the Legal Line, from anyone, including the human's assistant workflows.

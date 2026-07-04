@@ -3,7 +3,7 @@
 P01 is the hand-written approved exemplar and is NOT regenerated here."""
 import os
 
-ROOT = "/home/claude/listing-agent/package/playbooks"
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "playbooks")
 
 def build(p):
     s = f'---\nname: {p["num"]}-{p["slug"]}\ndescription: "{p["desc"]}"\n---\n\n'
@@ -246,3 +246,43 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+DAILY = [
+ {"num":"P16","slug":"morning-operations","name":"Morning Operations",
+  "desc":"Swarm deployment: the realtor's morning brief. Calendar, overnight leads, market scrapes, prospect suggestions, and yesterday's books - assembled and presented for human review before the day starts. Agents 10, 14, 15, 18, 19.",
+  "trigger":"Scheduled daily start (owner-configured time) or owner command.",
+  "pre":["EOD books from previous day exist (P17 completion event on log); if absent, brief runs with the gap NAMED, never silently thinner."],
+  "phases":[("Assemble (parallel, all to human review)",[
+    ("1","18","Today's calendar, deadlines, time blocks","`report.package`","package on log"),
+    ("2","14","Overnight interactions + open leads snapshot","`report.package`","package on log"),
+    ("3","10","Owner-configured searches and scrapes: new listings, price changes, comps movement","`data.package`","package on log; every datum carries provenance"),
+    ("4","19","Prospect suggestions ranked from yesterday's books + market deltas","`prospect.opportunity`","suggestions on log with reasoning trace"),
+    ("5","15","Yesterday's numbers: pipeline value, aging, commission forecast","`report.package`","package on log")]),
+   ("Present",[
+    ("6","00","Single morning brief assembled from the five packages; NOTHING acted on - presented for human review","-","brief delivered; human review gate OPEN")])],
+  "gates":["Every item in the brief is review-only. No client-facing action, no listing action, no send of any kind originates from this playbook.",
+           "A scrape datum without provenance does not enter the brief (gate principle)."],
+  "completion":"Human has the brief; review verdicts (act / park / discard) recorded via `config.update` or direct command. Completion event logged with brief size and gap flags.",
+  "abort":["Any assembling agent unreachable: brief ships with that section marked ABSENT - a thin brief that says so beats a full-looking brief that lies."],
+  "notes":"This playbook is why the product exists: the assistant that already read everything before the human's first coffee. One caught deadline or one surfaced expired-relist opportunity pays for the month."},
+ {"num":"P17","slug":"end-of-day-books","name":"End-of-Day Books",
+  "desc":"Swarm deployment: close the day's books. Every interaction, lead movement, financial delta, and missed-item candidate captured to a dated dataset that feeds tomorrow's P16 brief. Agents 14, 15, 18.",
+  "trigger":"Scheduled daily close (owner-configured) or owner command.",
+  "pre":["None beyond swarm-up; the books close even on a quiet day - an empty day recorded beats a missing day."],
+  "phases":[("Close",[
+    ("1","14","Day's interaction log, lead tier movements, oscillation flags","`report.package`","dated dataset on log"),
+    ("2","15","Financial deltas: pipeline changes, aging receivables, commission movement","`report.package`","dated dataset on log"),
+    ("3","18","Tomorrow's deadlines and unconfirmed appointments; anything unacknowledged today","`report.package`","dated dataset on log"),
+    ("4","00","Missed-item sweep: unanswered client messages, stale HOT leads, docs pending past SLA, listings with zero activity - the things a human assistant misses at 6pm","-","missed-item list on log, each with evidence pointer")]),
+   ("Book",[
+    ("5","00","Dated EOD books object assembled; becomes P16's morning input","-","completion event with books hash")])],
+  "gates":["Books are records, not actions - nothing client-facing originates here.",
+           "A missed-item entry must carry its evidence pointer (envelope id or log ref); a hunch is not a books entry."],
+  "completion":"Dated books object on log with hash; P16 precondition satisfied for tomorrow.",
+  "abort":["Any closing agent unreachable: books close with the section marked ABSENT and flagged to the morning brief."],
+  "notes":"The books are the memory. The suggestions in tomorrow's brief are only as honest as tonight's close - never rebuild from model memory, only from the log."}]
+for p in DAILY:
+    path = os.path.join(ROOT, f"{p['num']}-{p['slug']}")
+    os.makedirs(path, exist_ok=True)
+    open(os.path.join(path, "SKILL.md"), "w").write(build(p))
+    print("emitted", p["num"])

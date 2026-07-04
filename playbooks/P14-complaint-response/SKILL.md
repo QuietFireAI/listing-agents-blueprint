@@ -22,9 +22,9 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 | Step | Agent | Action | Intent | Proof of done |
 |---|---|---|---|---|
 | 1 | 20 or 11 | Complaint verbatim + context to priority queue | `escalation.complaint` | human notification per urgency config |
-| 2 | 11 | Outbound HOLD for that client context - no scheduled touches fire | - | hold state logged |
+| 2 | 11 | Outbound HOLD for that client context - no scheduled touches fire |  -  | hold state logged |
 | 3 | 20 | Optional DRAFT response attached (labeled, unpublished), compliance-checked | `content.review` → 17 | verdict attached to queue item |
-| 4 | human | Entire response: channel, content, resolution | - | resolution artifact |
+| 4 | human | Entire response: channel, content, resolution |  -  | resolution artifact |
 | 5 | 14 | Full thread logged; hold released only on human direction | `interaction.log` | context annotated |
 
 ## HITL gates (hard stops)

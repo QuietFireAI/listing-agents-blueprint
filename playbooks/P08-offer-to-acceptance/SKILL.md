@@ -25,8 +25,8 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 | 1 | 07 | Offer status tracking: submitted / countered / expired / response deadlines | `deadline.alert` → 11, 18 | status log current |
 | 2 | 07→08 | Supporting docs: pre-approval / proof of funds current | `doc.request` | `doc.status` (`in_reply_to`) |
 | 3 | 08 | Chase missing support docs from parties | `client.message.request` → 11 | chase log |
-| 4 | human | ALL negotiation: terms, counters, strategy, acceptance | - | human decisions logged as artifacts |
-| 5 | 07 | On acceptance → trigger P03 | - | P03 preconditions met |
+| 4 | human | ALL negotiation: terms, counters, strategy, acceptance |  -  | human decisions logged as artifacts |
+| 5 | 07 | On acceptance → trigger P03 |  -  | P03 preconditions met |
 
 ## HITL gates (hard stops)
 - Every negotiation act is human-only - an agent relaying a counter is transport, an agent suggesting one is a violation.

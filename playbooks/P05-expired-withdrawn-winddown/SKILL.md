@@ -29,7 +29,7 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 | Step | Agent | Action | Intent | Proof of done |
 |---|---|---|---|---|
 | 2a | 14 | Context annotated: outcome, reason if stated | `interaction.log` | record updated |
-| 2b | human | Relist pursuit decision. If pursuing: seller re-enters via standard intake (01→02) - no agent auto-enrolls a former seller into sequences | - | human direction logged |
+| 2b | human | Relist pursuit decision. If pursuing: seller re-enters via standard intake (01→02) - no agent auto-enrolls a former seller into sequences |  -  | human direction logged |
 
 ## HITL gates (hard stops)
 - Marketing running after status change is a compliance incident, not a cleanup item - 1b failure escalates immediately.

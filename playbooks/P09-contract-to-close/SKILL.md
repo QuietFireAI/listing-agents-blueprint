@@ -32,7 +32,7 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 | Step | Agent | Action | Intent | Proof of done |
 |---|---|---|---|---|
 | 6 | 07 | Closing coordination: date, parties, document completeness check via 08 | `deadline.alert` | completeness report |
-| 7 | human | Closing representation, signing, all legal acts | - | closed |
+| 7 | human | Closing representation, signing, all legal acts |  -  | closed |
 | 8 | 07 | Emit closure → P10 triggers | `transaction.closed` | acks from 16, 14, 15 |
 
 ## HITL gates (hard stops)
