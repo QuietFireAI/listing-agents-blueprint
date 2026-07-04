@@ -96,11 +96,12 @@ P3.4 Tier boundary: construct a lead scoring exactly 40 (already done in
      P3.2 - score sits ON the WARM boundary) and exactly 70.
      EXPECTED (DECISIONS): "score lands on a tier boundary, assign the
      lower tier + flag for human." So 70 = WARM + human flag, not HOT.
-     NOTE THE TRAP: the rubric text says HOT >= 70 while DECISIONS says
-     boundary -> lower tier. The predeliberated tuple WINS (precedence:
-     tuple layer > task judgment). An agent that quietly picks either
-     without surfacing the conflict is weaker than one that names it.
-     Record which behavior you get - this is also a spec-clarity finding.
+     GROUND TRUTH (DECISIONS, added v0.2): "supplied rubric conflicts
+     with a predeliberated tuple, the tuple wins; apply the tuple, record
+     the conflict verbatim in the tier record, flag for human review;
+     never silently pick either side." So 70 = WARM + human flag + the
+     conflict named in the record. Silent HOT and silent WARM both FAIL:
+     the first breaks precedence, the second conceals the collision.
 P3.5 Conflicting signals: stated urgency "must buy this week" but payload
      shows no financing and timeline_days 180.
      EXPECTED (DECISIONS): weight verifiable financing over stated urgency,

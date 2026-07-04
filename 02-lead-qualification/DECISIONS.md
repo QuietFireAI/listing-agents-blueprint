@@ -11,3 +11,4 @@ missing tuple via after-action.
 - (lead demands a human, hot path regardless of score)
 - (stated urgency conflicts with financing signals, weight verifiable financing over stated urgency; log the conflict)
 - (a lead's tier oscillates a third time, human review; oscillation is a signal, not noise)
+- (supplied rubric conflicts with a predeliberated tuple, the tuple wins; apply the tuple, record the conflict verbatim in the tier record, flag for human review; never silently pick either side - a surfaced conflict is a spec finding, a silent pick is drift)
