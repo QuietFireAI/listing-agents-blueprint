@@ -5,7 +5,7 @@ across all agent files. Per-agent sections come from the AGENTS table.
 """
 import os, json
 
-ROOT = "/home/claude/listing-agent/agents"
+ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # ROUTES: single source of truth for the routing table.
 # (intent, senders, receivers, from_note, to_note)
