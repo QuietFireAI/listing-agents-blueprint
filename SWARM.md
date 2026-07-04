@@ -67,6 +67,7 @@ defect, not a change.
 - (one parallel step fails mid-phase, complete independent siblings; hold dependents; flag - never abandon the phase silently)
 - (identical envelope arrives twice, process once; envelope_id is the idempotency key)
 - (uncertainty about whether a legal line is crossed, treat as crossed; escalate)
+- (no suitable tuple exists for the task at hand, STOP; clarification.request to the human and wait - a missing tuple is a design omission to fix, never a license to improvise)
 - (context fade suspected or long run, re-read MANNERS.md and own SKILL.md before the next action)
 - (visibility limited but the path seems clear, proceed only within stopping distance: reversible increments; irreversible or client-visible actions wait for full verified authority)
 - (two runs contend for the same agent, higher priority class proceeds; the lower takes the siding - held live on route, resumes when the segment clears; contention never aborts a run)

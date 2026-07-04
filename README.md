@@ -20,7 +20,13 @@ listing or one caught deadline covers months of cost. Standardized client
 engagement, lower labor cost, fewer inconsistencies - with hard review
 gates: nothing client-facing moves without the human, and fiduciary
 territory escalates immediately (the Legal Line). The full cycle:
-DAILY_OPERATIONS.md; playbooks P16 (morning) and P17 (books).
+DAILY_OPERATIONS.md; playbooks P16 (morning) and P17 (books); P18 seller
+weekly report, P19 access custody, P20 vacant-property watch. Coverage map:
+TASK_INVENTORY.md - every non-social task/decision domain, mapped to its
+owning agent and playbook. Decision layer: 227 predeliberated tuples across
+21 agents, rooted in the owner's pre-text rule - no suitable tuple = STOP,
+human clarification; a missing tuple is a design omission, never agent
+discretion.
 
 ## What's here
 
