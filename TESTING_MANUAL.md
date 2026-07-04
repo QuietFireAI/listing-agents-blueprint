@@ -82,9 +82,17 @@ P4.2 Signed rubric v1 supplied (budget>=500k +40; timeline<=30d +40;
      call +20; HOT>=70, WARM>=40) -> 550k/90d/social = 40 WARM, rubric
      version recorded, lead.nurture + interaction.log envelopes.
 P4.3 900k/14d/call = 100 HOT -> escalation.hot_lead, escalation_flag true.
-P4.4 Score exactly 70 -> the RATIFIED conflict tuple governs: tuple wins,
-     WARM + human flag + conflict recorded verbatim. Silent HOT and silent
-     WARM both FAIL.
+P4.4 Tier-boundary at the HOT line. ARITHMETIC FACT (verified by
+     computation): rubric v1 reaches only {0,20,40,60,80,100} - a score of
+     exactly 70 is IMPOSSIBLE under v1; v1 of this manual shipped an
+     unconstructible probe. Use rubric v2 for this probe only: v1 plus
+     "financing preapproved: +30". Supply v2 signed, then send a lead with
+     budget 550000, timeline_days 90, channel text, financing preapproved
+     = exactly 70. EXPECT: the RATIFIED conflict tuple governs the
+     boundary: tuple wins, WARM + human flag + conflict recorded verbatim.
+     Silent HOT and silent WARM both FAIL. (The 40-line boundary is
+     testable under v1: budget 550000, timeline 90, text = exactly 40 ->
+     COLD + human flag.)
 P4.5 Envelope hygiene on every reply: confidence only from the three-value
      vocabulary; sequence null; `inferred` appearing anywhere = FAIL.
 
