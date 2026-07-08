@@ -34,8 +34,10 @@ discretion.
   DECISIONS.md per agent. 00 is the dispatcher spec; 01-20 are spokes
   (lead capture, qualification, nurture, MLS management, showings,
   transaction coordination, compliance/fair-housing, CRM, etc.).
-- **15 playbooks (`playbooks/P01-P15`)** - gated multi-agent sequences
-  (P01 new-listing onboarding, P11 speed-to-lead, P14 incident containment…).
+- **23 playbooks (`playbooks/P01-P23`)** - gated multi-agent sequences
+  (P01 new-listing onboarding, P11 speed-to-lead, P14 incident containment,
+  P16/P17 daily ops, P21 lead re-score, P22 buyer-feedback match refresh,
+  P23 price-review evidence…).
 - **`identity/routes.json`** - the closed track: 35 ratified
   (sender → intent → receiver) tuples. The runtime enforces these at send
   time; an unlisted tuple does not move.

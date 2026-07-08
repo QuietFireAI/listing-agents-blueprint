@@ -9,7 +9,7 @@ defect, not a change.
 ## Manifest (generated)
 - Agents: 21 (00-dispatcher + 20 spokes)
 - Routes: 35 entries, 34 distinct intents
-- Playbooks: P01-P15 (playbooks/)
+- Playbooks: P01-P23 (playbooks/)
 - Layer stack: MANNERS.md → DISPATCHER_CORE.md → identity/ → DECISIONS.md
   (per agent) → playbooks/ → agent SKILL.md files
 - Track principle: the ROUTE-SPACE IS CLOSED. Agents run on predetermined
