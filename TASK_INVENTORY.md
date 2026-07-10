@@ -10,9 +10,11 @@ Social/media tasks are OUT OF SCOPE here by owner direction (later phase).
 capture from call/form/text/sign-call | consent recording (TCPA) | CRM
 dedupe before tiering | rubric scoring, version pinned | tier assignment +
 boundary handling | hot-lead human handoff + SLA re-alert | nurture
-sequencing, consent-gated | re-score on behavioral change | tire-kicker
-archive with reason | duplicate-context resolution | do-not-contact
-honoring | source attribution | Coverage: P11, P06; tuples 01/02/03.
+sequencing, consent-gated | re-score on behavioral change | standing
+re-score cycle: warming leads promoted back into the SLA path before they
+go cold (P21) | tire-kicker archive with reason | duplicate-context
+resolution | do-not-contact honoring | source attribution | Coverage: P11,
+P06, NEW P21 rescore cycle; tuples 01/02/03.
 
 ## 2 Listing lifecycle (04, 05, 10, 12, 17)
 listing agreement to live (P01) | property data assembly | photography /
@@ -20,16 +22,20 @@ staging / sign / lockbox scheduling via vendors | description drafting +
 fair-housing review gate | MLS entry, accuracy, status changes (signed
 authority only) | price adjustment cycle (P02) | comp analysis + CMA prep
 (P15) | open house cycle (P04) | showing feedback collection | days-on-
-market watch | expired/withdrawn winddown (P05) | relist decisioning
-(human) | Coverage: P01, P02, P04, P05, P15; tuples 04/05/10/12/17.
+market watch | price-review evidence pack for a live listing - human
+decides, distinct from P02 execution and P15 CMA (P23) | expired/withdrawn
+winddown (P05) | relist decisioning (human) | Coverage: P01, P02, P04, P05,
+P15, NEW P23 price-review evidence; tuples 04/05/10/12/17.
 
 ## 3 Showings and access (06, 09, 18)
 showing requests and confirmations | conflict-free scheduling | access
 instructions WITHOUT key/code disclosure in messages | lockbox custody:
 issue, audit, rotate, revoke | occupied-home notice rules | vacant-property
-access watch | showing no-show handling | feedback requests | tour-day
-multi-stop coordination (P07) | Coverage: P07, NEW P19 access custody,
-NEW P20 vacant watch; tuples 06/09/18.
+access watch | showing no-show handling | feedback requests | post-tour feedback
+into a refreshed buyer match set and the next round of showings (P22) |
+tour-day multi-stop coordination (P07) | Coverage: P07, NEW P19 access
+custody, NEW P20 vacant watch, NEW P22 feedback-match refresh; tuples
+06/09/18.
 
 ## 4 Offers through close (07, 08, 15, 17)
 offer receipt logging (negotiation itself: HUMAN ONLY, P08 doctrine) |
@@ -54,8 +60,11 @@ report, P13, P14; tuples 11/16.
 owner-configured daily scrapes: new/expired/price-change/comps | provenance
 on every datum, no unsourced market claims | absorption and DOM trends |
 farm-area statistics | FSBO/expired candidate surfacing (contact rules:
-human + compliance gate) | prospect ranking from books | CMA data packages
-| Coverage: P12 (geo farm), P16 (morning), tuples 10/19.
+human + compliance gate) | prospecting outreach under HITL-per-case
+probation gate - every case pauses for human validation, autonomy earned by
+logged reps (P24) | prospect ranking from books | CMA data packages
+| Coverage: P12 (geo farm), P16 (morning), NEW P24 prospecting outreach;
+tuples 10/19.
 
 ## 7 Books, records, finance (14, 15, 18)
 interaction log completeness | record dedupe and merge | pipeline valuation

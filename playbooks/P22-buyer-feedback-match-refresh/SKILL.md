@@ -7,7 +7,7 @@ description: "Swarm deployment: turn post-tour feedback into a refreshed buyer m
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ## Trigger
 A completed tour with logged feedback (P07 completion), or an owner command to

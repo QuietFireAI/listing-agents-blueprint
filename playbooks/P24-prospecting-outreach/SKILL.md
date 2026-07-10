@@ -7,7 +7,7 @@ description: "Swarm deployment: agent 19 surfaces prospecting opportunities (FSB
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off; probation state active, graduation still gated on owner-ratified tuples)
 
 ## Two states, one playbook
 This playbook has a **probation state (active now, legal on the current

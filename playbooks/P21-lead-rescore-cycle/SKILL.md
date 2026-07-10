@@ -7,7 +7,7 @@ description: "Swarm deployment: standing re-score of nurtured leads so a warming
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ## Trigger
 Date-driven cadence over the nurture pool (owner-configured interval) or an

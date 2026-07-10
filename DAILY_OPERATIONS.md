@@ -17,8 +17,9 @@ MORNING (P16 Morning Operations, scheduled service):
   nothing in the brief acts on a client. Verdicts (act / park / discard)
   come back as owner commands.
 
-DAY: the always-on playbooks (P11 speed-to-lead front door, P02-P15 as
-  triggered) run under the dispatcher with full pillar coverage - every
+DAY: the always-on playbooks (P11 speed-to-lead front door, P02-P24 as
+  triggered; P21 standing lead re-score runs on its cycle) run under the
+  dispatcher with full pillar coverage - every
   action tuple-legal, every trace read, every overclaim gated.
 
 EVENING (P17 End-of-Day Books, scheduled service):

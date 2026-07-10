@@ -7,7 +7,7 @@ description: "Swarm deployment: assemble the market-and-activity evidence for a 
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ## Trigger
 A price-review signal on a live listing: days-on-market threshold crossed,
