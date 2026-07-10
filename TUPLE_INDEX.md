@@ -52,7 +52,7 @@ Connected playbooks: P04, P11
 | 01.16 | record.response never returns | retry once then hold the lead in pending with a handoff.failed; never tier undeduped |
 
 ## Agent 02 - lead-qualification
-Connected playbooks: P04, P11
+Connected playbooks: P04, P11, P21
 
 | # | Crossing | Predeliberated answer |
 |---|---|---|
@@ -70,7 +70,7 @@ Connected playbooks: P04, P11
 | 02.12 | all rubric inputs unknown | tier is UNKNOWN not COLD; unknown is not a low score, it is absent data |
 
 ## Agent 03 - lead-nurture
-Connected playbooks: P12
+Connected playbooks: P12, P21
 
 | # | Crossing | Predeliberated answer |
 |---|---|---|
@@ -104,7 +104,7 @@ Connected playbooks: P01, P02, P04
 | 04.11 | remarks exceed MLS field limits | cut by priority list from the identity config; never silently truncate mid-claim |
 
 ## Agent 05 - mls-listing-management
-Connected playbooks: P01, P02, P03, P05, P18
+Connected playbooks: P01, P02, P03, P05, P18, P23
 
 | # | Crossing | Predeliberated answer |
 |---|---|---|
@@ -121,7 +121,7 @@ Connected playbooks: P01, P02, P03, P05, P18
 | 05.11 | withdrawal requested while under contract | halt; 17 + human; status math on a live contract is never autonomous |
 
 ## Agent 06 - showing-scheduler
-Connected playbooks: P01, P04, P07, P18, P19
+Connected playbooks: P01, P04, P07, P18, P19, P22
 
 | # | Crossing | Predeliberated answer |
 |---|---|---|
@@ -190,7 +190,7 @@ Connected playbooks: P01, P09, P19, P20
 | 09.11 | work scope grows on-site per vendor | stop work order message per template; scope changes are human-approved |
 
 ## Agent 10 - market-data
-Connected playbooks: P06, P12, P15, P16, P18, P20
+Connected playbooks: P06, P12, P15, P16, P18, P20, P21, P22, P23, P24
 
 | # | Crossing | Predeliberated answer |
 |---|---|---|
@@ -207,7 +207,7 @@ Connected playbooks: P06, P12, P15, P16, P18, P20
 | 10.11 | historic data requested beyond retention | absent is the answer; never reconstruct from model memory |
 
 ## Agent 11 - client-communication
-Connected playbooks: P01, P02, P03, P05, P09, P14, P18
+Connected playbooks: P01, P02, P03, P05, P09, P14, P18, P22, P23, P24
 
 | # | Crossing | Predeliberated answer |
 |---|---|---|
@@ -240,7 +240,7 @@ Connected playbooks: P01, P02, P03, P04, P05, P10, P12
 | 12.10 | budget change requested verbally | current signed budget stands until config.update |
 
 ## Agent 13 - buyer-search-match
-Connected playbooks: P01, P06, P07
+Connected playbooks: P01, P06, P07, P22, P24
 
 | # | Crossing | Predeliberated answer |
 |---|---|---|
@@ -256,7 +256,7 @@ Connected playbooks: P01, P06, P07
 | 13.10 | buyer pre-approval expires mid-search | notify + mark; matches continue flagged unverified-financing |
 
 ## Agent 14 - crm-pipeline
-Connected playbooks: P01, P05, P06, P10, P11, P13, P14, P16, P17, P19, P20
+Connected playbooks: P01, P05, P06, P10, P11, P13, P14, P16, P17, P19, P20, P22, P23, P24
 
 | # | Crossing | Predeliberated answer |
 |---|---|---|
@@ -303,7 +303,7 @@ Connected playbooks: P10, P13
 | 16.09 | contact bounced/disconnected | mark stale, no skip-tracing; re-permission is a human choice |
 
 ## Agent 17 - compliance-fair-housing
-Connected playbooks: P01, P04, P12, P18
+Connected playbooks: P01, P04, P12, P18, P21, P22, P24
 
 | # | Crossing | Predeliberated answer |
 |---|---|---|
@@ -334,7 +334,7 @@ Connected playbooks: P01, P07, P15, P16, P17, P19, P20
 | 18.09 | timezone ambiguity on any party | confirm before scheduling; assumptions here cost closings |
 
 ## Agent 19 - prospecting
-Connected playbooks: P12, P16
+Connected playbooks: P12, P16, P24
 
 | # | Crossing | Predeliberated answer |
 |---|---|---|

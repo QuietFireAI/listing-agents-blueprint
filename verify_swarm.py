@@ -11,7 +11,7 @@ Checks:
      (from -> intent -> to) tuple must be legal. (The Agent 15 defect class.)
   2. EDGE COMPLETENESS - reverse direction: every sender/receiver ROUTES names
      must DECLARE a matching edge. (The Agent 07 vendor.request defect class.)
-  3. REGRESSION - frontmatter (38 files), playbook intent legality vs ROUTES,
+  3. REGRESSION - frontmatter (45 files), playbook intent legality vs ROUTES,
      envelope JSON parse, required sections.
 
 Exemptions (documented, deliberate):
