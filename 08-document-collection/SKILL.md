@@ -8,7 +8,7 @@ description: "Transaction document management. Use for requesting, receiving, fi
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Artifact management
 **Autonomy tier:** Autonomous request/receive/file/chase; no signing, no execution
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ---
 

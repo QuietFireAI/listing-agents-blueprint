@@ -1,4 +1,4 @@
-# TelsonBase Identity Module - Real Estate Listing Agent (v0.1 DRAFT)
+# TelsonBase Identity Module - Real Estate Listing Agent (v0.1, ratified 2026-07-10)
 
 Side-loaded vertical identity for a TelsonBase Dispatcher (see
 DISPATCHER_CORE.md). This module declares WHAT is orchestrated; the core
@@ -29,7 +29,7 @@ negotiation, and representation acts.
 ## Authority intents requiring signature (per core directive 5)
 `listing.change.authorized`, `config.update`.
 
-## Playbook priority classes (per core JIT doctrine - DRAFT, owner ratification pending)
+## Playbook priority classes (per core JIT doctrine - ratified 2026-07-10, owner sign-off)
 - Class 2 (JIT freight - clocks at risk): P02 (signed price execution), P03
   (status flip + marketing halt windows), P05 (halt legs are compliance
   clocks), P08 (offer response deadlines), P09 (contract-to-close), P14
@@ -53,4 +53,4 @@ negotiation, and representation acts.
   agreement-on-file flag).
 - Consent/opt-out flags (authoritative in 14) gate every outbound touch.
 
-## Status: v0.1 DRAFT - not runtime-tested, no licensed legal review.
+## Status: v0.1 ratified 2026-07-10 (owner sign-off) - runtime-tested via the dispatcher-agents suite; no licensed legal review yet.

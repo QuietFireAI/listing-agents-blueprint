@@ -7,7 +7,7 @@ description: "Swarm deployment playbook: signed listing agreement to live, marke
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ## Trigger
 Signed listing agreement executed and human submits the authorized listing

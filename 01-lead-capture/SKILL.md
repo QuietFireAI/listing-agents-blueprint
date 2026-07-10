@@ -8,7 +8,7 @@ description: "Front-of-funnel intake. Use when handling inbound calls, web forms
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Intake / front-of-funnel
 **Autonomy tier:** Autonomous within job components; mandatory escalation at the Legal Line
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ---
 

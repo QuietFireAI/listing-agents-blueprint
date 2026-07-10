@@ -8,7 +8,7 @@ description: "Social listening and routing with no public replies. Use for monit
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Listening & routing (new)
 **Autonomy tier:** Monitor, classify, route ONLY - no autonomous public replies, ever
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ---
 

@@ -7,7 +7,7 @@ description: "Swarm deployment: signed buyer agreement to active matched-search.
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ## Trigger
 Signed written buyer agreement filed (08) and recorded (14).

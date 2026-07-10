@@ -1,4 +1,4 @@
-# SWARM.md - Framework Manifest + Swarm-Level Decisions (v0.1 DRAFT)
+# SWARM.md - Framework Manifest + Swarm-Level Decisions (v0.1, ratified 2026-07-10)
 
 Framework context for the dispatcher and every agent: as much predefined
 structure as exists, until learning (after-action dataset) takes over.
@@ -74,5 +74,5 @@ defect, not a change.
 - (task requires a path outside declared edges, refuse; clarification.request - an undeclared path is ambiguity, not opportunity)
 - (an unlisted crossing is reached, ambiguity protocol; propose the missing tuple in the after-action report for human ratification)
 
-Status: v0.1 DRAFT - manifest verified against generator data at generation
+Status: v0.1 ratified 2026-07-10 (owner sign-off) - manifest verified against generator data at generation
 time; not runtime-tested.

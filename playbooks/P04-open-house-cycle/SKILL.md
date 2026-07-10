@@ -7,7 +7,7 @@ description: "Swarm deployment: scheduled open house from promotion through lead
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ## Trigger
 Open house scheduled (human decision or P01 step 3d).

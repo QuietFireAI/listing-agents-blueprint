@@ -8,7 +8,7 @@ description: "Buyer-side search and matching. Use for maintaining client-stated 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Buyer-side matching (new)
 **Autonomy tier:** Autonomous matching against client-stated criteria only; steering risk = compliance consult
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ---
 

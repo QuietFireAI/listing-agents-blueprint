@@ -8,7 +8,7 @@ description: "Routine client messaging. Use for delivering scheduling and milest
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Client-facing messaging
 **Autonomy tier:** Autonomous for routine transactional updates; instant escalation on advice-seeking
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ---
 

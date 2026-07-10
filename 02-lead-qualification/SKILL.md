@@ -8,7 +8,7 @@ description: "Lead scoring and triage. Use when a captured lead needs readiness 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Scoring / triage
 **Autonomy tier:** Autonomous scoring; mandatory human handoff for hot leads and at the Legal Line
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ---
 

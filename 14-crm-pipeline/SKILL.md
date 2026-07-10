@@ -8,7 +8,7 @@ description: "System of record. Use for contact database maintenance, interactio
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** System of record
 **Autonomy tier:** Autonomous operation permitted as long as interactions do not cross into negotiating representation
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ---
 

@@ -7,7 +7,7 @@ description: "Swarm deployment: human-decided price change to updated, re-market
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ## Trigger
 Human requests decision-support data, or submits a SIGNED `listing.change.authorized` envelope with the new price. The price decision itself is fiduciary and human-only; this playbook surrounds it, never makes it.

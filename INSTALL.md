@@ -27,7 +27,7 @@ Caveats:
   TelsonBase runtime.
 - Platform-specific skill features are deliberately unused; files stick to the
   core spec for maximum portability.
-- Status: v0.1 DRAFT specs, not runtime-tested, no licensed legal review.
+- Status: v0.1 ratified 2026-07-10 (owner sign-off); runtime-tested via the dispatcher-agents suite; no licensed legal review yet.
 
 ## Pillar relationship (dispatcher runtime)
 

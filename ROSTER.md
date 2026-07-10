@@ -1,4 +1,4 @@
-# TelsonBase Listing Agent - Swarm Roster v0.1 (DRAFT)
+# TelsonBase Listing Agent - Swarm Roster v0.1 (ratified 2026-07-10)
 
 21 agents, hub-and-spoke via 00. Changes from the original 18-agent breakdown:
 

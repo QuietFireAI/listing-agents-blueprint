@@ -7,7 +7,7 @@ description: "Swarm deployment: detected complaint to human-resolved closure wit
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ## Trigger
 20 classifies a complaint (social) or 11 receives one directly.

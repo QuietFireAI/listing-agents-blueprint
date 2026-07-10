@@ -8,7 +8,7 @@ description: "Prospecting discovery with zero outreach. Use for monitoring prede
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Opportunity discovery (new)
 **Autonomy tier:** Autonomous monitoring and flagging; ZERO autonomous outreach - every contact is human-approved
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
 
 ---
 
