@@ -7,7 +7,7 @@ description: "Swarm deployment: client showing interest to completed, feedback-l
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ## Trigger
 Buyer expresses interest in touring specific properties (via 13 matches or 11 inbound).

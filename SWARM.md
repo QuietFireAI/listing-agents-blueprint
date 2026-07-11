@@ -1,4 +1,4 @@
-# SWARM.md - Framework Manifest + Swarm-Level Decisions (v0.1, ratified 2026-07-10)
+# SWARM.md - Framework Manifest + Swarm-Level Decisions (v0.1 (ratified 2026-07-11))
 
 Framework context for the dispatcher and every agent: as much predefined
 structure as exists, until learning (after-action dataset) takes over.
@@ -9,7 +9,7 @@ defect, not a change.
 ## Manifest (generated)
 - Agents: 21 (00-dispatcher + 20 spokes)
 - Routes: 35 entries, 34 distinct intents
-- Playbooks: P01-P24 (playbooks/)
+- Playbooks: P01-P15 (playbooks/)
 - Layer stack: MANNERS.md → DISPATCHER_CORE.md → identity/ → DECISIONS.md
   (per agent) → playbooks/ → agent SKILL.md files
 - Track principle: the ROUTE-SPACE IS CLOSED. Agents run on predetermined
@@ -74,5 +74,5 @@ defect, not a change.
 - (task requires a path outside declared edges, refuse; clarification.request - an undeclared path is ambiguity, not opportunity)
 - (an unlisted crossing is reached, ambiguity protocol; propose the missing tuple in the after-action report for human ratification)
 
-Status: v0.1 ratified 2026-07-10 (owner sign-off) - manifest verified against generator data at generation
+Status: v0.1 (ratified 2026-07-11) - manifest verified against generator data at generation
 time; not runtime-tested.

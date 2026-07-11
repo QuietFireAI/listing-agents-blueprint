@@ -7,7 +7,7 @@ description: "Swarm deployment: detected complaint to human-resolved closure wit
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ## Trigger
 20 classifies a complaint (social) or 11 receives one directly.
@@ -23,7 +23,7 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 |---|---|---|---|---|
 | 1 | 20 or 11 | Complaint verbatim + context to priority queue | `escalation.complaint` | human notification per urgency config |
 | 2 | 11 | Outbound HOLD for that client context - no scheduled touches fire |  -  | hold state logged |
-| 3 | 20 | Optional suggested response attached - clearly labeled as an unpublished draft for human review, compliance-checked | `content.review` → 17 | verdict attached to queue item |
+| 3 | 20 | Optional DRAFT response attached (labeled, unpublished), compliance-checked | `content.review` → 17 | verdict attached to queue item |
 | 4 | human | Entire response: channel, content, resolution |  -  | resolution artifact |
 | 5 | 14 | Full thread logged; hold released only on human direction | `interaction.log` | context annotated |
 

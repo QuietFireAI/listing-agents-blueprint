@@ -8,7 +8,7 @@ description: "Post-close relationship and referrals. Use for 30/90/365 check-ins
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Post-close relationship & referral (merged: After-Close Nurture + Referral Agent)
 **Autonomy tier:** Autonomous execution per supplied client list and cadence; new-business requests hand off
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ---
 

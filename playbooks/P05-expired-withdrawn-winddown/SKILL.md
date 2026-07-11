@@ -7,7 +7,7 @@ description: "Swarm deployment: immediate marketing halt and clean wind-down on 
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ## Trigger
 Listing reaches expiration date (07/05 tracked) or seller withdrawal confirmed by human.

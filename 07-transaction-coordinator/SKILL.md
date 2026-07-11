@@ -8,7 +8,7 @@ description: "Transaction timeline tracking from offer submission through closin
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deadline & milestone tracking
 **Autonomy tier:** Autonomous tracking and alerting from offer submission through closing; no representation, no signatures, no opinions
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ---
 

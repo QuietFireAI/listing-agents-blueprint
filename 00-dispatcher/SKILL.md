@@ -8,7 +8,7 @@ description: "Hub and router for the TelsonBase real estate listing swarm. Use f
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Hub / router / single point of control (and of failure - by design)
 **Autonomy tier:** Full autonomy over routing mechanics; ZERO autonomy over content - the Dispatcher answers no client-facing question itself, ever
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ---
 

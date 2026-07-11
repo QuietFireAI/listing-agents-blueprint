@@ -7,7 +7,7 @@ description: "Swarm deployment: close the day's books. Every interaction, lead m
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ## Trigger
 Scheduled daily close (owner-configured) or owner command.

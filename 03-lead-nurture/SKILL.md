@@ -8,7 +8,7 @@ description: "Long-cycle lead nurture. Use for drip email/text sequences, market
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Long-cycle engagement
 **Autonomy tier:** Autonomous sequence execution; compliance hop required on sequence content; Legal Line escalation
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ---
 

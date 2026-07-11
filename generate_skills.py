@@ -271,7 +271,7 @@ def build(a):
     s += f"**Swarm:** TelsonBase Listing Agent (Real Estate)\n"
     s += f"**Type:** {a['type']}\n"
     s += f"**Autonomy tier:** {a['autonomy']}\n"
-    s += "**Version:** 0.1 (DRAFT - not implemented)\n\n---\n\n"
+    s += "**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)\n\n---\n\n"
     s += "## 1. Role\n\n" + a['role'].strip() + "\n\n"
     s += "## 2. Job Components\n\n"
     for j in a['jobs']:
@@ -793,7 +793,7 @@ DISPATCHER = frontmatter("00", "dispatcher") + """# Agent 00 - Dispatcher
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Hub / router / single point of control (and of failure - by design)
 **Autonomy tier:** Full autonomy over routing mechanics; ZERO autonomy over content - the Dispatcher answers no client-facing question itself, ever
-**Version:** 0.1 (DRAFT - not implemented)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ---
 

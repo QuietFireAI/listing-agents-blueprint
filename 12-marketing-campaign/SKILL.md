@@ -8,7 +8,7 @@ description: "Marketing distribution. Use for scheduling social posts, newslette
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Content distribution & campaigns
 **Autonomy tier:** Autonomous scheduling/distribution of APPROVED assets; all new copy passes Compliance (17)
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ---
 

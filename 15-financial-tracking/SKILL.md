@@ -8,7 +8,7 @@ description: "Financial tracking. Use for commissions per transaction, marketing
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Financial records
 **Autonomy tier:** Autonomous tracking and reporting; highest PII sensitivity in the swarm; no legal interpretation
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ---
 

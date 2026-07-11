@@ -8,7 +8,7 @@ description: "Showing coordination. Use for scheduling buyer showings against se
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Coordination / scheduling
 **Autonomy tier:** Autonomous scheduling; cannot authorize property access
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (ratified 2026-07-11 - owner sign-off; not runtime-hardened)
 
 ---
 
