@@ -7,7 +7,7 @@ description: "Swarm deployment: standing watch on vacant listings. Condition che
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (DRAFT - not implemented)
 
 ## Trigger
 Listing marked vacant (from P01 data or status change) until occupied/closed.

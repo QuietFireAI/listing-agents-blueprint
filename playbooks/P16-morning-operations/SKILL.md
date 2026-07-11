@@ -7,7 +7,7 @@ description: "Swarm deployment: the realtor's morning brief. Calendar, overnight
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (DRAFT - not implemented)
 
 ## Trigger
 Scheduled daily start (owner-configured time) or owner command.

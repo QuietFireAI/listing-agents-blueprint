@@ -7,7 +7,7 @@ description: "Swarm deployment: keys, codes, and lockboxes as custody items. Iss
 
 **Swarm:** TelsonBase Listing Agent (Real Estate)
 **Type:** Deployment playbook (consumed by Agent 00 - Dispatcher)
-**Version:** 0.1 (ratified 2026-07-10 - owner sign-off)
+**Version:** 0.1 (DRAFT - not implemented)
 
 ## Trigger
 New listing access setup (from P01), custody audit cadence, or a custody event (lost key, code exposure, vendor access need).
