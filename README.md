@@ -64,12 +64,20 @@ licensed attorney. Verify against current local rules before use.**
 ```
 git clone https://github.com/QuietFireAI/dispatcher-agents
 git clone https://github.com/QuietFireAI/listing-agents
-cd dispatcher-agents && pip install -e .
+cd dispatcher-agents && pip install -e ".[pillars,crypto,dev]"   # core alone routes; pillars arm the detection tier
+python3 -m pytest tests/                                         # green suite before any claim
 IDENTITY_DIR=../listing-agents python3 demo/run_p11_demo.py
 ```
 
+Deployment: `INTEGRATIONS.md` (seam contracts), `DEPLOY.md` (shadow-mode
+runbook), `config/` (owner-ratified tables; `authority_signers.json` binds
+the signed-authority lane to named human logins - the runtime refuses to arm
+from the unratified template).
+
 First of several verticals. Status: v0.17; owner density review of P02-P15
-pending. MIT - [QuietFireAI](https://github.com/QuietFireAI).
+pending. PROPRIETARY - commercial license required (see LICENSE, including
+its honest history note on the brief MIT window at commit 9dd03c1) -
+[QuietFireAI](https://github.com/QuietFireAI).
 
 ## License
 
