@@ -132,7 +132,8 @@
    ],
    "receivers": [
     "05",
-    "08"
+    "08",
+    "07"
    ]
   },
   {
@@ -168,7 +169,8 @@
     "08",
     "13",
     "16",
-    "20"
+    "20",
+    "03"
    ],
    "receivers": [
     "11"
@@ -373,6 +375,93 @@
    ],
    "receivers": [
     "any"
+   ]
+  },
+  {
+   "intent": "lead.reply",
+   "senders": [
+    "11"
+   ],
+   "receivers": [
+    "03",
+    "04",
+    "12",
+    "13",
+    "20"
+   ]
+  },
+  {
+   "intent": "behavioral.signal",
+   "senders": [
+    "12",
+    "20"
+   ],
+   "receivers": [
+    "03"
+   ]
+  },
+  {
+   "intent": "status.request",
+   "senders": [
+    "06"
+   ],
+   "receivers": [
+    "05"
+   ]
+  },
+  {
+   "intent": "status.response",
+   "senders": [
+    "05"
+   ],
+   "receivers": [
+    "06"
+   ]
+  },
+  {
+   "intent": "showing.no_show",
+   "senders": [
+    "11",
+    "18"
+   ],
+   "receivers": [
+    "06"
+   ]
+  },
+  {
+   "intent": "showing.feedback_response",
+   "senders": [
+    "11"
+   ],
+   "receivers": [
+    "06"
+   ]
+  },
+  {
+   "intent": "document.submission",
+   "senders": [
+    "11"
+   ],
+   "receivers": [
+    "08"
+   ]
+  },
+  {
+   "intent": "vendor.event",
+   "senders": [
+    "external"
+   ],
+   "receivers": [
+    "09"
+   ]
+  },
+  {
+   "intent": "compliance.notice",
+   "senders": [
+    "10"
+   ],
+   "receivers": [
+    "17"
    ]
   }
  ]
