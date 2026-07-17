@@ -21,7 +21,8 @@ Precondition unmet = playbook does not start; `clarification.request` to human.
 ### Continuous
 | Step | Agent | Action | Intent | Proof of done |
 |---|---|---|---|---|
-| 1 | 20→01 | Social questions/lead signals routed to intake | `lead.signal` | ack |
+| 1a | ext→01 | Direct call/form/text reaches intake | `lead.inbound` | ack |
+| 1b | 20→01 | Social questions/lead signals routed to intake | `lead.signal` | ack |
 | 2 | 01 | Capture with consent recording; CRM dedupe first | `record.request` then `lead.captured` | lead object complete-or-unknown-flagged |
 | 3 | 02 | Score per human rubric version; tier assigned |  -  | tier + rubric version logged |
 | 4a | 02 | HOT → human handoff with SLA re-alert | `escalation.hot_lead` | human acknowledgment inside window |
