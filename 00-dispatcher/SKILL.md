@@ -94,30 +94,45 @@ communication in that one guarantee.
 | `lead.captured` | 01, 16 | 02 |
 | `lead.nurture` | 02 | 03 |
 | `lead.rescored` | 03 | 02 |
-| `content.review` | 03, 04, 12, 13, 20 | 17 |
+| `content.review` | 03, 04, 12, 13, 16, 20 | 17 |
 | `content.verdict` | 17 | submitter (`in_reply_to`) |
 | `asset.release` | 04 | 12, 05 |
 | `listing.data` | 05 | 04, 10, 13 |
 | `listing.change.authorized` | human (SIGNED, verified) | 05 |
 | `showing.request` | 13, 11 | 06 |
+| `showing.feedback_response` | 11 | 06 |
+| `showing.no_show` | 11, 18 | 06 |
+| `status.request` | 06 | 05 |
+| `status.response` | 05 | 06 |
 | `doc.request` | 07 | 08 |
 | `doc.status` | 08 | (`in_reply_to`) |
+| `document.submission` | 11 | 08 |
 | `vendor.request` | 05, 06, 07 | 09 |
-| `deliverable.release` | 09 | 05, 08 |
+| `vendor.event` | external | external vendor systems |
+| `deliverable.release` | 09 | 05, 07, 08 |
 | `data.request` | human, 03, 11, 13, 19 | 10 |
 | `data.package` | 10 | requester (`in_reply_to`) |
-| `client.message.request` | 06, 08, 13, 16, 20 | 11 |
+| `client.message.request` | 03, 06, 08, 13, 16, 20 | 11 |
 | `client.message.send` | 11 | external client channels (approved) |
+| `client.reply` | external | inbound client replies |
 | `deadline.alert` | 07 | 11, 18 |
 | `calendar.event` | 06, 09 | 18 |
 | `date.trigger` | 14 | 16 |
 | `prospect.opportunity` | 19 | human queue, 13 |
+| `discovery.feed` | external | external prospecting sources |
 | `lead.signal` | 20 | 01 |
+| `lead.inbound` | external | direct call/web-form/text intake |
+| `lead.reply` | 11 | 03, 04, 12, 13, 16, 20 |
+| `behavioral.signal` | 12, 20 | 03 |
+| `social.mention` | external | external social platforms |
+| `compliance.notice` | 10 | 17 |
+| `platform.metrics` | external | external ad/social platforms |
 | `report.package` | 14 | requester (`in_reply_to`) |
-| `report.package` | 15, 18 | human |
+| `report.package` | 15, 17, 18 | human |
 | `interaction.log` | all except 14 | 14 |
-| `record.request` | 01, 13, 15 | 14 |
+| `record.request` | 01, 11, 13, 15 | 14 |
 | `record.response` | 14 | requester (`in_reply_to`) |
+| `agent.status` | 01, 02, 03, 04, 05, 06, 07, 08, 09, 11, 12, 13, 15, 16, 17, 19, 20 | wait-state signaling |
 | `status.update` | 05 | 11, 12, 14 |
 | `transaction.closed` | 07 | 16, 14, 15 |
 | `vendor.schedule` | 09 | external vendors (approved channels) |
