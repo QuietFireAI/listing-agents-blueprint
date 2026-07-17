@@ -125,7 +125,7 @@ communication in that one guarantee.
 | `lead.reply` | 11 | 03, 04, 12, 13, 16, 20 |
 | `behavioral.signal` | 12, 20 | 03 |
 | `social.mention` | external | external social platforms |
-| `compliance.notice` | 10 | 17 |
+| `compliance.notice` | 10, 05 | 17 |
 | `platform.metrics` | external | external ad/social platforms |
 | `report.package` | 14 | requester (`in_reply_to`) |
 | `report.package` | 15, 17, 18 | human |
