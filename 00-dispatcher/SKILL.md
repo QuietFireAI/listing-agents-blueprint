@@ -109,6 +109,7 @@ communication in that one guarantee.
 | `document.submission` | 11 | 08 |
 | `vendor.request` | 05, 06, 07 | 09 |
 | `vendor.event` | external | external vendor systems |
+| `vendor.cancellation_notice` | 09 | urgent - a regular deliverable/deadline stall timer is the wrong mechanism for a definitive cancellation |
 | `deliverable.release` | 09 | 05, 07, 08 |
 | `data.request` | human, 03, 11, 13, 19 | 10 |
 | `data.package` | 10 | requester (`in_reply_to`) |
