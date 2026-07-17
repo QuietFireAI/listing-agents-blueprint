@@ -113,7 +113,7 @@ communication in that one guarantee.
 | `deliverable.release` | 09 | 05, 07, 08 |
 | `data.request` | human, 03, 11, 13, 19 | 10 |
 | `data.package` | 10 | requester (`in_reply_to`) |
-| `client.message.request` | 03, 06, 08, 13, 16, 20 | 11 |
+| `client.message.request` | 01, 03, 06, 08, 13, 16, 20 | 11 |
 | `client.message.send` | 11 | external client channels (approved) |
 | `client.reply` | external | inbound client replies |
 | `deadline.alert` | 07 | 11, 18 |
