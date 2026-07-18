@@ -130,7 +130,7 @@ communication in that one guarantee.
 | `platform.metrics` | external | external ad/social platforms |
 | `report.package` | 14 | requester (`in_reply_to`) |
 | `report.package` | 15, 17, 18 | human |
-| `interaction.log` | all except 14 | 14 |
+| `interaction.log` | human (all except 14 and 15) | 14 |
 | `record.request` | 01, 11, 13, 15 | 14 |
 | `record.response` | 14 | requester (`in_reply_to`) |
 | `agent.status` | 01, 02, 03, 04, 05, 06, 07, 08, 09, 11, 12, 13, 15, 16, 17, 19, 20 | wait-state signaling |

@@ -50,7 +50,11 @@ ROUTES = [
  ("platform.metrics", ["external"], ["12"], "", "external ad/social platforms"),
  ("report.package", ["14"], ["human","15"], "", "requester (`in_reply_to`)"),
  ("report.package", ["15","17","18"], ["human"], "", ""),
- ("interaction.log", ["01","02","03","04","05","06","07","08","09","10","11","12","13","15","16","17","18","19","20"], ["14"], "all except 14", ""),
+ # 15 pruned 2026-07-17: declared sender with zero code and no SKILL.md
+ # ratification (over-declared route). Pruned here at the GENERATOR - the
+ # routes.json prune alone would have been silently resurrected by the
+ # next regeneration (caught by the 2026-07-18 doc-freshness audit).
+ ("interaction.log", ["01","02","03","04","05","06","07","08","09","10","11","12","13","16","17","18","19","20"], ["14"], "all except 14 and 15", ""),
  ("record.request", ["01","11","13","15"], ["14"], "", ""),
  ("record.response", ["14"], ["01","11","13","15"], "", "requester (`in_reply_to`)"),
  ("agent.status", ["01","02","03","04","05","06","07","08","09","11","12","13","15","16","17","19","20"], ["18"], "", "wait-state signaling"),

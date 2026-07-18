@@ -322,6 +322,15 @@ def swarm_md():
     agents_list = "\n".join(f"- {a['num']} {a['name']}" for a in AGENTS)
     intents = sorted({i for i, *_ in ROUTES})
     tuples = "\n".join(f"- ({c}, {a})" for c, a in SWARM_TUPLES)
+    # Derived from the playbooks/ directory itself - this line used to be
+    # a hardcoded "P01-P15" string that silently went stale when P16-P24
+    # landed (caught by the 2026-07-18 doc-freshness audit).
+    pb_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "playbooks")
+    pb_ids = sorted(d.split("-")[0] for d in os.listdir(pb_dir)
+                    if d.startswith("P") and
+                    os.path.isdir(os.path.join(pb_dir, d)))
+    playbook_range = (f"{pb_ids[0]}-{pb_ids[-1]} ({len(pb_ids)} playbooks)"
+                      if pb_ids else "none")
     return f"""# SWARM.md - Framework Manifest + Swarm-Level Decisions (v0.1 (ratified 2026-07-11))
 
 Framework context for the dispatcher and every agent: as much predefined
@@ -333,7 +342,7 @@ defect, not a change.
 ## Manifest (generated)
 - Agents: {len(AGENTS)+1} (00-dispatcher + {len(AGENTS)} spokes)
 - Routes: {len(ROUTES)} entries, {len(intents)} distinct intents
-- Playbooks: P01-P15 (playbooks/)
+- Playbooks: {playbook_range} (playbooks/)
 - Layer stack: MANNERS.md → DISPATCHER_CORE.md → identity/ → DECISIONS.md
   (per agent) → playbooks/ → agent SKILL.md files
 - Track principle: the ROUTE-SPACE IS CLOSED. Agents run on predetermined
