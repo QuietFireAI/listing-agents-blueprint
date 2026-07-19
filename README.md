@@ -81,4 +81,13 @@ its honest history note on the brief MIT window at commit 9dd03c1) -
 
 ## License
 
-Proprietary - commercial licenses available from QuietFireAI. See LICENSE.
+Dual-licensed under the **QuietFire Identity License** (see `LICENSE`) over
+an **AGPL-3.0** floor (see `LICENSE-AGPL`). Evaluation, development, and
+internal testing — including cloning, running the suite, and any demo — are
+free. **Production and commercial use require a paid license from
+QuietFireAI or full AGPL-3.0 compliance.** Building derivative identities
+for third parties is not permitted without a commercial license. The
+supported commercial operating environment is TelsonBase. The open chassis
+this runs on (dispatcher-agents) is Apache-2.0 and separate.
+
+*License text is a placeholder pending counsel review.*
