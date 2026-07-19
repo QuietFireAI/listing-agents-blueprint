@@ -1,4 +1,4 @@
-# INTEGRATIONS - Listing Swarm (Real Estate) (v0.1, ratified 2026-07-11 - owner sign-off)
+# INTEGRATIONS - Listing Swarm (Real Estate) (v0.19, ratified 2026-07-18 - owner sign-off)
 
 The deployable boundary of this identity: every external system it touches,
 the contract an adapter must satisfy, and the conformance bar. This file is

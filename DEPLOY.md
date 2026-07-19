@@ -1,4 +1,4 @@
-# DEPLOY - Listing Swarm (Real Estate) (v0.1, ratified 2026-07-11 - owner sign-off)
+# DEPLOY - Listing Swarm (Real Estate) (v0.19, ratified 2026-07-18 - owner sign-off)
 
 The operator runbook: what a deployment site must have, ratify, and verify
 before this identity runs live.
