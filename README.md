@@ -74,7 +74,7 @@ runbook), `config/` (owner-ratified tables; `authority_signers.json` binds
 the signed-authority lane to named human logins - the runtime refuses to arm
 from the unratified template).
 
-First of several verticals. Status: v0.17; owner density review of P02-P15
+First of several verticals. Status: v0.19 (ratified; extended & ratified 2026-07-18 - owner sign-off)
 pending. PROPRIETARY - commercial license required (see LICENSE, including
 its honest history note on the brief MIT window at commit 9dd03c1) -
 [QuietFireAI](https://github.com/QuietFireAI).
